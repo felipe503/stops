@@ -1,0 +1,59 @@
+<div class="container">
+  <div id="drop_zone" class="well" >Drop files here</div>
+  <output id="list"></output>
+</div>
+<script src="public/js/filesReader.js"></script>
+<div class="container">
+  <h1>About</h1>
+  <hr>
+  <link rel="stylesheet" href="http://ville.montreal.qc.ca/pls/portal/docs/page/lib_fr/media/styles/inc/form.css">
+  <!-- -------------------------------------- -->
+  <h2>Formulaire interactif</h2>
+  <p>Pour permettre aux citoyens ne faisant pas partie du comité de travail de suivre et participer à l’évolution du projet, un formulaire interactif est disponible afin de vous permettre d'émettre des commentaires et/ou poser des questions.</p>
+  <div class="formCont">
+    <div class="mess_facul">
+      <p>Les champs marqués d'un astérisque (<span class="ch_oblig">*</span>) sont obligatoires.</p>
+    </div>
+    <div class="formuChamp">
+      <form class="default" name="form_evenement_public" id="form_evenement_public" action="/formmail/formmail_fr" method="post">
+      <input type="hidden" align="left" value="Participation des citoyens" name="subject" />
+      <input type="hidden" align="left" value="http://ville.montreal.qc.ca/portal/page?_pageid=7697,106859588&_dad=portal&_schema=PORTAL" name="redirect" />
+      <input type="hidden" align="left" value="xcordfe@ville.montreal.qc.ca" name="recipient" /><!--mylenerobert@ville.montreal.qc.ca-->
+      <input type="hidden" align="left" value="prenom,nom,courriel,codepostal,telephone,commentaires" name="message_field_sort" />
+      <fieldset>
+        <div class="field">
+          <label for="prenom">Prénom <span class="ch_oblig">*</span></label>
+          <input class="text required" id="prenom" size="30" name="prenom">
+        </div>
+        <div class="field">
+          <label for="nom">Nom <span class="ch_oblig">*</span></label>
+          <input class="text required" id="nom" size="30" name="nom">
+        </div>
+        <div class="field">
+          <label for="courriel">Courriel <span class="ch_oblig">*</span></label>
+          <input class="text email" id="courriel" size="30" name="courriel">
+        </div>
+        <div class="field">
+          <label for="codepostal">Code postal <span class="ch_oblig">*</span></label>
+          <input class="text" id="codepostal" size="30" name="codepostal">
+        </div>
+         <div class="field">
+          <label for="telephone">Téléphone <span class="ch_oblig">*</span></label>
+          <input class="text required phoneUS" id="telephone" size="30" name="telephone">
+        </div>
+        <div class="field">
+          <label for="commentaires">Commentaires </label>
+          <textarea id="commentaires" name="commentaires"></textarea>
+        </div>
+      </fieldset>
+      <fieldset>
+        <div class="field">
+          <input type="submit" value="Envoyer" class="button" name="submit">
+        </div>
+      </fieldset>
+      </form>
+    </div>
+  </div>
+  <!-- -------------------------------------- -->
+
+</div>

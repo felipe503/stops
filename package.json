@@ -1,0 +1,18 @@
+{
+  "name": "info-travaux",
+  "version": "1.0.0",
+  "description": "virtual server node.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xcordfe",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "less": "^2.7.2",
+    "mongojs": "^2.4.0"
+  }
+}

@@ -1,0 +1,15 @@
+<style>
+  #map{height:500px;}
+</style>
+<div class="container">
+  <h1><%=title %></h1>
+  <div id="map"></div>
+  <div id="content-window"></div>
+</div>
+<script type="text/javascript">
+  var stops = <%- JSON.stringify(stops) %>;
+</script>
+
+<script src="public/js/script.js"></script>
+<script src="public/js/markerclusterer.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALXxJYGKNHWr0EenPE3ZxXCVLnEwT6rVA"></script>
