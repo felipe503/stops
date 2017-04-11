@@ -48,19 +48,19 @@ db.stops.find(function (err, docs) {
 });
 app.get('/', function (req, res) {
   res.render('index',{
-    title: 'Index list',
+    title: 'Index',
     stops:stops
   });
 });
 app.get('/about', function (req, res) {
   res.render('about',{
-    title: 'About list'
+    title: 'About'
   });
 });
 
 app.get('/list',function(req, res){
   res.render('list',{
-    title: 'List list'
+    title: 'List'
   });
 });
 
